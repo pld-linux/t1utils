@@ -19,11 +19,12 @@ form, reassemble them into PFA or PFB format. Additionally you can
 extract font resources from a Macintosh font file (ATM/Laserwriter).
 
 %description -l pl
-t1utils jest kolekcj± prostych programów do manipulacji na fontach
-Type 1 i 2. Pozwala na konwersjê pomiêdzy PFA (ASCII) i PFB (binarny),
-przekodowaniu z PFA lub PFB do "czytelnej dla cz³owieka" formy, a
-nastêpnie ponowne z³o¿enie do formatu PFA lub PFB. Dodatkowo mozliwe
-jest wyci±gniêcie fontów z ATM/Laserwriter z Macintosh'a.
+t1utils jest zestawem prostych programów do operowania na fontach
+Type 1 i 2. Narzêdzia te pozwalaj± na konwersjê pomiêdzy formatami PFA
+(ASCII) i PFB (binarnym), przekodowanie z PFA lub PFB do postaci
+"czytelnej dla cz³owieka", nastêpnie ponowne z³o¿enie do formatu PFA
+lub PFB. Dodatkowo mozliwe jest wyci±gniêcie fontów z plików fontów z
+Macintosha (ATM/Laserwriter).
 
 %prep
 %setup -q
@@ -36,8 +37,8 @@ jest wyci±gniêcie fontów z ATM/Laserwriter z Macintosh'a.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
