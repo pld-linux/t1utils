@@ -1,7 +1,7 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Summary(pl):	Ró¿ne narzêdzia do operowania na fontach Type 1 i 2
 Name:		t1utils
-Version:	1.24
+Version:	1.25
 Release:	1
 License:	Copyright 1992 Lee Hetherington
 Group:		Applications/File
@@ -22,9 +22,9 @@ extract font resources from a Macintosh font file (ATM/Laserwriter).
 %description -l pl
 t1utils jest kolekcj± prostych programów do manipulacji na fontach
 Type 1 i 2. Pozwala na konwersjê pomiêdzy PFA (ASCII) i PFB (binarny),
-przekodowaniu z PFA lub PFB do "czytelnej dla cz³owieka" formy, a 
-nastêpnie ponowne z³o¿enie do formatu PFA lub PFB. Dodatkowo
-mozliwe jest wyci±gniêcie fontów z ATM/Laserwriter z Macintosh'a.
+przekodowaniu z PFA lub PFB do "czytelnej dla cz³owieka" formy, a
+nastêpnie ponowne z³o¿enie do formatu PFA lub PFB. Dodatkowo mozliwe
+jest wyci±gniêcie fontów z ATM/Laserwriter z Macintosh'a.
 
 %prep
 %setup -q
