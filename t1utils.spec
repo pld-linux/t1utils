@@ -1,7 +1,7 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Name:		t1utils
-Version:	1.20
-Release:	2
+Version:	1.21
+Release:	1
 License:	Copyright 1992 Lee Hetherington
 Group:		Applications/File
 Group(de):	Applikationen/Datei
