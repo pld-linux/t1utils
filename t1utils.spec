@@ -6,6 +6,7 @@ Release:	1
 License:	BSD
 Group:		Applications/File
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
+# Source0-md5:	c7725977275456882e1c9fcb6530a757
 URL:		http://www.lcdf.org/~eddietwo/type/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
