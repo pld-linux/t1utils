@@ -1,8 +1,8 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Name:		t1utils
-Version:	1.14
+Version:	1.15
 Release:	1
-Copyright:	Copyright 1992 Lee Hetherington
+License:	Copyright 1992 Lee Hetherington
 Group:		Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Source:		http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
@@ -29,13 +29,14 @@ rm -rf $RPM_BUILD_ROOT
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
+	NEWS README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
