@@ -1,6 +1,6 @@
 Summary:     Various utilities for manipulating Type 1 and 2 font programs
 Name:        t1utils
-Version:     1.8
+Version:     1.10.1
 Release:     1
 Copyright:   Copyright 1992 Lee Hetherington
 Group:       Utilities/File
@@ -19,6 +19,7 @@ from a Macintosh font file (ATM/Laserwriter).
 %setup -q
 
 %build
+autoconf
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure %{_target} \
 	--prefix=/usr
@@ -26,22 +27,26 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
+#install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
 
 make install prefix=$RPM_BUILD_ROOT/usr
 
-gzip -9nf $RPM_BUILD_ROOT/usr/man/man1/*
+gzip -9nf $RPM_BUILD_ROOT/usr/share/man/man1/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc README
-%attr(755, root, root) /usr/bin/*
-%attr(644, root,  man) /usr/man/man1/*
+%attr(755,root,root) /usr/bin/*
+/usr/share/man/man1/*
 
 %changelog
+* Sun May  9 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [1.10.1-1]
+- now package is FHS 2.0 compiliat.
+
 * Thu Dec  3 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [1.7-1]
 - added gzipping man pages,
