@@ -7,7 +7,7 @@ Group:		Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Source:		http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 URL:		http://www.lcdf.org/~eddietwo/type/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 t1utils is a collection of simple Type 1 and 2 font manipulation programs.
