@@ -23,7 +23,7 @@ t1utils jest zestawem prostych programów do operowania na fontach
 Type 1 i 2. Narzêdzia te pozwalaj± na konwersjê pomiêdzy formatami PFA
 (ASCII) i PFB (binarnym), przekodowanie z PFA lub PFB do postaci
 "czytelnej dla cz³owieka", nastêpnie ponowne z³o¿enie do formatu PFA
-lub PFB. Dodatkowo mozliwe jest wyci±gniêcie fontów z plików fontów z
+lub PFB. Dodatkowo mo¿liwe jest wyci±gniêcie fontów z plików fontów z
 Macintosha (ATM/Laserwriter).
 
 %prep
