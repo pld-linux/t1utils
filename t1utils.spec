@@ -6,7 +6,7 @@ Copyright:   Copyright 1992 Lee Hetherington
 Group:       Utilities/File
 Source:      http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 URL:         http://www.lcdf.org/~eddietwo/type/
-Buildroot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 t1utils is a collection of simple Type 1 and 2 font manipulation programs. 
