@@ -5,8 +5,6 @@ Version:	1.25
 Release:	1
 License:	Copyright 1992 Lee Hetherington
 Group:		Applications/File
-Group(de):	Applikationen/Datei
-Group(pl):	Aplikacje/Pliki
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 URL:		http://www.lcdf.org/~eddietwo/type/
 BuildRequires:	autoconf
