@@ -1,10 +1,11 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Name:		t1utils
 Version:	1.20
-Release:	1
+Release:	2
 License:	Copyright 1992 Lee Hetherington
-Group:		Utilities/File
-Group(pl):	Narzêdzia/Pliki
+Group:		Applications/File
+Group(de):	Applikationen/Datei
+Group(pl):	Aplikacje/Pliki
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 URL:		http://www.lcdf.org/~eddietwo/type/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,7 +21,6 @@ extract font resources from a Macintosh font file (ATM/Laserwriter).
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
@@ -29,8 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	NEWS README
+gzip -9nf NEWS README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
