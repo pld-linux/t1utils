@@ -1,6 +1,6 @@
-Summary:     Various utilities for manipulating Type 1 font programs
+Summary:     Various utilities for manipulating Type 1 and 2 font programs
 Name:        t1utils
-Version:     1.7
+Version:     1.8
 Release:     1
 Copyright:   Copyright 1992 Lee Hetherington
 Group:       Utilities/File
@@ -9,7 +9,7 @@ URL:         http://www.lcdf.org/~eddietwo/type/
 Buildroot:   /tmp/%{name}-%{version}-root
 
 %description
-t1utils is a collection of simple type-1 font manipulation programs. 
+t1utils is a collection of simple Type 1 and 2 font manipulation programs. 
 Together, they allow you to convert between PFA (ASCII) and PFB (binary)
 formats, disassemble PFA or PFB files into human-readable form, reassemble
 them into PFA or PFB format.  Additionally you can extract font resources
@@ -19,7 +19,8 @@ from a Macintosh font file (ATM/Laserwriter).
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" ./configure \
+CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
+./configure \
 	--prefix=/usr
 make
 
