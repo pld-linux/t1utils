@@ -28,7 +28,7 @@ jest wyci±gniêcie fontów z ATM/Laserwriter z Macintosh'a.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
