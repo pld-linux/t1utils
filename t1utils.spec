@@ -1,5 +1,5 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
-Summary(pl.UTF-8):   Różne narzędzia do operowania na fontach Type 1 i 2
+Summary(pl.UTF-8):	Różne narzędzia do operowania na fontach Type 1 i 2
 Name:		t1utils
 Version:	1.32
 Release:	1
