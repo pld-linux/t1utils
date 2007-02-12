@@ -1,5 +1,5 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
-Summary(pl):	Ró¿ne narzêdzia do operowania na fontach Type 1 i 2
+Summary(pl.UTF-8):   RÃ³Å¼ne narzÄ™dzia do operowania na fontach Type 1 i 2
 Name:		t1utils
 Version:	1.32
 Release:	1
@@ -18,12 +18,12 @@ PFB (binary) formats, disassemble PFA or PFB files into human-readable
 form, reassemble them into PFA or PFB format. Additionally you can
 extract font resources from a Macintosh font file (ATM/Laserwriter).
 
-%description -l pl
-t1utils jest zestawem prostych programów do operowania na fontach
-Type 1 i 2. Narzêdzia te pozwalaj± na konwersjê pomiêdzy formatami PFA
+%description -l pl.UTF-8
+t1utils jest zestawem prostych programÃ³w do operowania na fontach
+Type 1 i 2. NarzÄ™dzia te pozwalajÄ… na konwersjÄ™ pomiÄ™dzy formatami PFA
 (ASCII) i PFB (binarnym), przekodowanie z PFA lub PFB do postaci
-"czytelnej dla cz³owieka", nastêpnie ponowne z³o¿enie do formatu PFA
-lub PFB. Dodatkowo mo¿liwe jest wyci±gniêcie fontów z plików fontów z
+"czytelnej dla czÅ‚owieka", nastÄ™pnie ponowne zÅ‚oÅ¼enie do formatu PFA
+lub PFB. Dodatkowo moÅ¼liwe jest wyciÄ…gniÄ™cie fontÃ³w z plikÃ³w fontÃ³w z
 Macintosha (ATM/Laserwriter).
 
 %prep
