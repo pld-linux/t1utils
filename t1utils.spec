@@ -7,7 +7,7 @@ License:	BSD
 Group:		Applications/File
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 # Source0-md5:	a8d9dad4eab239357dd045275770eb8f
-Patch0:		gcc41.patch
+Patch0:		gcc4.patch
 URL:		http://www.lcdf.org/~eddietwo/type/#t1utils
 BuildRequires:	autoconf
 BuildRequires:	automake
