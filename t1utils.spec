@@ -7,8 +7,10 @@ License:	BSD
 Group:		Applications/File
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
 # Source0-md5:	a8d9dad4eab239357dd045275770eb8f
+Patch0:		gcc41.patch
 URL:		http://www.lcdf.org/~eddietwo/type/#t1utils
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,8 +30,11 @@ Macintosha (ATM/Laserwriter).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__automake}
 %{__autoconf}
 %configure
 %{__make}
