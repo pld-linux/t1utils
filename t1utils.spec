@@ -1,15 +1,14 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Summary(pl.UTF-8):	Różne narzędzia do operowania na fontach Type 1 i 2
 Name:		t1utils
-Version:	1.33
+Version:	1.36
 Release:	1
 License:	BSD
 Group:		Applications/File
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
-# Source0-md5:	a8d9dad4eab239357dd045275770eb8f
-Patch0:		gcc4.patch
+# Source0-md5:	f580e78a38807bce0242b63b5da3a572
 URL:		http://www.lcdf.org/~eddietwo/type/#t1utils
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +29,6 @@ Macintosha (ATM/Laserwriter).
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -51,5 +49,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_bindir}/t1ascii
+%attr(755,root,root) %{_bindir}/t1asm
+%attr(755,root,root) %{_bindir}/t1binary
+%attr(755,root,root) %{_bindir}/t1disasm
+%attr(755,root,root) %{_bindir}/t1mac
+%attr(755,root,root) %{_bindir}/t1unmac
+%{_mandir}/man1/t1ascii.1*
+%{_mandir}/man1/t1asm.1*
+%{_mandir}/man1/t1binary.1*
+%{_mandir}/man1/t1disasm.1*
+%{_mandir}/man1/t1mac.1*
+%{_mandir}/man1/t1unmac.1*
