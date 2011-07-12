@@ -1,12 +1,12 @@
 Summary:	Various utilities for manipulating Type 1 and 2 font programs
 Summary(pl.UTF-8):	Różne narzędzia do operowania na fontach Type 1 i 2
 Name:		t1utils
-Version:	1.36
+Version:	1.37
 Release:	1
 License:	BSD
 Group:		Applications/File
 Source0:	http://www.lcdf.org/~eddietwo/type/%{name}-%{version}.tar.gz
-# Source0-md5:	f580e78a38807bce0242b63b5da3a572
+# Source0-md5:	dcff07df0b334c06d1808530956a634e
 URL:		http://www.lcdf.org/~eddietwo/type/#t1utils
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
